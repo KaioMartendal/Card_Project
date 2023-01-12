@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #0a052d;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  width: 540px;
+  height: 550px;
+
+  margin-top: 40px;
+  position: relative;
+}
+.cardDivision {
+  width: 100%;
+  height: 200px;
+
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  z-index: 1;
+}
+.card {
+  width: 320px;
+  height: 100%;
+  border-radius: 17px;
+
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 600ms ease-in-out;
+}
+.card:hover{
+  transform: rotateY(180deg);
+}
+.frontCard,
+.backCard{
+  position: absolute;
+  background-image: url(./assets/Card_Background.png);
+  height: 100%;
+  width: 100%;
+  border-radius: 17px;
+  backface-visibility: hidden;
+}
+.backCard{
+  transform: rotateY(180deg);
+}
+.chipAndLogo{
+  display: flex;
+  justify-content: space-between;
+}
+#chip{
+  width: 50px;
+  height: 35px;
+  margin-top: 60px;
+  margin-left: 25px;
+}
+#bankLogo{
+  width: 70px;
+  height: 60px;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+#numberInCard,
+ #valityInCard,
+  #nameInCard{
+    color: #e2e7e9;
+    font-size: 27px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    margin-left: 20px;
+
+}
+#numberInCard{
+  margin-top: 5px;
+}
+#valityInCard{
+  font-size: 20px;
+}
+
+.barsCode{
+  width: 100%;
+  height: 50px;
+  background-color: #e2e7e9;
+  margin-top: 20px;
+}
+.cvvAndBanklogo{
+  display:flex;
+  margin-top: 30px;
+}
+.cvvBackCard{
+  margin-left: 30px;
+}
+.backCard img{
+  width: 70px;
+  height: 60px;
+  margin-top: 30px;
+  margin-left: 170px;
+}
+.infoDivision {
+  height: 440px;
+  width: 100%;
+  background-color: #e2e7e9;
+  border-radius: 25px;
+
+  margin-top: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dataInput{
+  width: 455px;
+  height: 300px;
+
+}
+.number{
+  display: flex;
+}
+#numbInput{
+  outline: 0px;
+}
+p{
+  user-select: none;
+  margin-top: 0px;
+  border: 0px;
+  color: #e2e7e9;
+}
+#showText{
+  padding-top: 36px;
+  padding-left: 10px;
+  color: black;
+}
+#valityText{
+  margin-left: 70px;
+  font-size: 20px;
+  color: black;
+}
+input{
+  margin-top: 25px;
+  width: 370px;
+  height: 40px;
+  background-color: transparent;
+  border: 0px;
+  border-bottom: 1px solid;
+  border-color: #83868b;
+  outline: 0px;
+}
+ #show{
+  width: 15px;
+  margin-left: 18px;
+}
+#nameinput{
+  width: 450px;
+}
+#cvvInput{
+  width: 50px;
+}
+.cvvAndVality{
+  display: flex;
+  justify-content: space-between;
+}
+.vality{
+  margin-right: 50px;
+}
+.vality select{
+  width: 90px;
+  height: 30px;
+  background-color: transparent;
+  border-color: #83868b;
+  color: #83868b;
+}
+.submit{
+  display: flex;
+  justify-content: center;  
+}
+.submit button{
+  width: 300px;
+  height: 45px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: #0c46a9;
+  border: 0px;
+  color: #e2e7e9;
+}

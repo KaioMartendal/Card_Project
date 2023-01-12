@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <div class="cardDivision">
+                <div class="card">
+                    <div class="frontCard">
+                        <div class="chipAndLogo">
+                            <img src="./assets/ChipCard.png" alt="" id="chip">
+                            <img src="./assets/MasterCard_Logo.png" alt="" id="bankLogo">
+                        </div>
+                        <div class="numberValityAndName">
+                            <p id="numberInCard"></p>
+                            <p id="valityInCard"></p>
+                            <p id="nameInCard"></p>
+                        </div>
+                    </div>
+                    <div class="backCard">
+                        <div class="barsCode">
+                        </div>
+                        <div class="cvvAndBanklogo">
+                            <div class="cvvBackCard">
+                                <p>CVV</p>
+                                <p id="cvvInCard"></p>
+                            </div>
+                            <img src="./assets/MasterCard_Logo.png" id="bankLogo" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="infoDivision">
+                <div class="dataInput">
+                <div class="number">
+                    <div class="inputNumb">
+                        <input type="number" name="" id="numbInput" placeholder="CARD NUMBER" >
+                        <p id="numbError">Erro! insira um número válido!</p>
+                    </div>
+                    <input type="checkbox" name="" id="show">
+                    <p id="showText">Show</p>
+                </div>
+                <div class="name">
+                    <input type="text" name="" id="nameInput" placeholder="YOUR NAME" maxlength="20">
+                    <p id="nameError">Erro! insira um nome válido!</p>
+                </div>
+                <div class="cvvAndVality">
+                    <div class="cvvNumb">
+                        <input type="number" name="" id="cvvInput" placeholder="CVV">
+                        <p id="cvvError">Erro! insira um CVV válido!</p>
+                    </div>
+                    <div class="vality">
+                        <p id="valityText">Vality</p>
+                        <div class="select">
+                            <select name="" id="month">
+                                <option value="0">JAN</option>
+                                <option value="1">FEV</option>
+                                <option value="2">MAR</option>
+                                <option value="3">ABR</option>
+                                <option value="4">MAI</option>
+                                <option value="5">JUN</option>
+                                <option value="6">JUL</option>
+                                <option value="7">AGO</option>
+                                <option value="8">SET</option>
+                                <option value="9">OUT</option>
+                                <option value="10">NOV</option>
+                                <option value="11">DEZ</option>
+                            </select>
+                            <select name="" id="year">
+                                <option value="0">2022</option>
+                                <option value="1">2023</option>
+                                <option value="2">2024</option>
+                                <option value="3">2025</option>
+                                <option value="4">2026</option>
+                                <option value="5">2027</option>
+                                <option value="6">2028</option>
+                                <option value="7">2029</option>
+                                <option value="8">2030</option>
+                            </select>    
+                        </div>
+                    </div>                        
+                    </div>
+                    <div class="submit">
+                        <button onclick='first()'>Submit</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
